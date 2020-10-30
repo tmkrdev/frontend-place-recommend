@@ -1,0 +1,315 @@
+*, body, html {
+	padding: 0;
+	margin: 0;
+	letter-spacing: 1.01px;
+}
+
+body {
+
+	/* background-image: url(Please-wait.svg), none;
+	background-repeat: no-repeat;
+	background-position: center; */
+	/* background-size: initial */
+
+}
+
+body::before{
+	background-color:powderblue;
+}
+
+body::after{
+	background-color:powderblue;
+}
+
+
+body::-webkit-scrollbar {
+	display: none;
+    /* scroll-behavior: smooth; */
+    /* scrollbar-color: yellow blue;
+    scrollbar-color: #87ceeb #ff5621; */
+    /* scrollbar-color: auto; */;
+}
+
+
+.clear {
+	clear: both;
+}
+
+div#header {
+	position: fixed;
+	top: 0;
+	min-width: 100%;
+	height: 36px;
+	display : flex ;
+	align-items : center;
+	justify-content: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	/* height: 36px; */
+	z-index: 2;
+	font-size: 36px;
+	background-color:#F8F8FF;
+	opacity: 1;
+}
+
+#header .items {
+	/* float: left; */
+	width: 100%;
+}
+
+#header .items .left {
+	float: left;
+	/* width: 33.33%; */
+	padding-left: 9px;
+}
+
+#header .items .right {
+	float: right;
+    /* width: 33.33%; */
+	padding-right: 9px;
+}
+
+#header .items .title {
+	/* text-overflow: ellipsis;
+    overflow: hidden;
+    whiteSpace: nowrap; */
+	color : "#6e6e7a";
+	text-shadow : '1px 1px 3px #d8d8f0';
+	line-height: 200%;
+	text-align: center;
+	font-size: 19px;
+	text-align: center;
+	vertical-align: middle; 
+}
+#container {
+	display: block;
+	/* margin-top: 10px; */
+	margin-bottom: 54px;
+	overflow-y: scroll;
+    /* height: 100%; */;
+}
+
+#container #head {
+	text-align: center;
+}
+
+#container #head h1 {
+	font-size: 28px;
+    /* color: #fcfcfc; */;
+}
+
+#container #head .search {
+	width: 90%;
+	margin: auto;
+}
+
+#container #head .search input {
+	margin-top: 20px;
+	width: 90%;
+	height: 54px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 15px;
+	font-size: 18px;
+	border: 0;
+	float: left;
+	outline: none;
+}
+
+#container #head .search .icon {
+	margin-top: 20px;
+	width: 10%;
+	height: 54px;
+    /* z-index: 2; */
+	color: #4f5b66;
+	float: right;
+	background: #0B0B0B;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top: 2px solid #fcfcfc;
+	border-right: 2px solid #fcfcfc;
+	border-bottom: 2px solid #fcfcfc;
+	border-left: 0;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+#container #head .search .icon:hover {
+	cursor: pointer;
+}
+
+#contents {
+    /* color: #fcfcfc; */
+	width: 90%;
+	margin: 30px auto;
+}
+
+#contents .relation {
+	margin-top: 40px;
+}
+
+#contents .relation .head h2 {
+	font-size: 18;
+}
+/* style 을 react component 쪽에 명시한다.   
+#contents .relation ul.cards {
+	height: 300px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	-moz-text-align-last: justify;
+	-webkit-text-align-last: justify;
+	text-align-last: justify;
+	
+} */
+
+#contents .relation ul.cards::-webkit-scrollbar {
+	width: 3px !important;
+  }
+
+#contents .relation ul.cards::-webkit-scrollbar-thumb {
+	background-color : #9eb7bb; 
+	border-radius: 10px;
+	background: #a1c2ca; /* fallback for old browsers */
+  }
+
+#contents .relation ul.cards li.card:hover {
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+	transform: scale(1.02);
+  }
+
+/* style 을 React 컴포넌트 쪽에 명시한다  
+#contents .relation ul.cards li.card {
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	width: 45%;
+	background-color: gray;
+	border-radius: 5px;
+	height: 76px;
+	padding: 5px;
+	margin-bottom: 15px;
+	opacity: 0.3;
+} */
+
+li.card.green {
+	background-color: #9FCC70 !important;
+}
+
+li.card.red {
+	background-color: #BB6263 !important;
+}
+
+li.card.active {
+	opacity: 1 !important;
+}
+
+#bottom {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 54px;
+}
+
+#bottom button {
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#bottom button:hover {
+	cursor: pointer;
+}
+
+/* 
+First Result List page
+*/
+
+/* 첫번째 결과 페이지 지도  */
+/* #recMap{
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 34%;
+	box-shadow: 1px 4px 5px #808080;
+} */
+
+ /* #recMap {
+	border: 1px solid rgb(70, 88, 84);
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	text-align: center;
+} */
+
+/*
+ 첫번째 결과 페이지 Swiper 
+*/
+
+/****
+Swiper 안의 카드 **/
+
+.resultCard {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	/* background-color:rgb(118, 167, 199); */
+	cursor: pointer;
+}
+
+/*  카드 내의 해시태그  */ 
+
+/*******
+	커스텀 오버레이 시작 *****/
+	
+	.customoverlay {
+		padding: 10px;
+		opacity: 0.8;
+		font-weight: bold;
+		box-shadow: 0 4px 8px 0 rgba(101, 177, 187, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		color : rgba(46, 65, 62, 0.507);
+		position: relative;
+		bottom: 45px;
+		border-radius: 6px;
+		border: 1px solid #fff;
+		border-bottom: 2px solid #fff;
+		background-color: #fff;
+		float: left;
+	}
+
+
+	.customoverlay .title {
+		display: block;
+		text-align: center;
+		background: #fff;
+		margin-right: 35px;
+		padding: 10px 15px;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.customoverlay:after {
+		content: '';
+		position: absolute;
+		margin-left: -12px;
+		left: 50%;
+		bottom: -12px;
+		width: 22px;
+		height: 12px;
+		background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+	}
+
+/*******
+	커스텀 오버레이 끝 *****/
+	
+/****
+	결과 페이지 텍스트 블링크 *****/
+	
+@keyframes blinker {
+50% {
+	opacity: 0;
+}
+}
